@@ -2,7 +2,7 @@
 title: About Us
 permalink: /about/
 layout: default
-description: Find out about us!
+description: Find out more about us!
 ---
 
 This is team 8872 Robopocalypse’s seventh year competing in FTC. Our team has improved and changed a lot since the first year of our existence. Not only do we have the team, but we have also created a robotics club at Wilcox High School for interested students to learn about the different elements of robotics. Our club members generally assist us with our FTC related work only there is a lot less commitment.
