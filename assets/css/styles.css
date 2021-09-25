@@ -9,3 +9,17 @@
 	background-position: top right, top left, center;
 	
 }
+
+.btn {
+	color: white; 
+	background-color: rgba(59, 68, 74, 0.4);
+}
+
+.btn:hover{
+	background-color: rgba(33, 36, 38, 0.6)
+}
+
+body{
+line-height: 1.6;
+
+}
