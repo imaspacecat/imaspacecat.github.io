@@ -29,7 +29,7 @@ twitter_username:
 github_username:  
 
 # Build settings
-theme: jekyll-theme-minima
+#theme: jekyll-theme-minima
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
