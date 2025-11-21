@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.2; /* Compact line spacing */
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Specific Styles */
+h3:first-of-type {
+    margin-top: 0;
+}
+
+p a {
+    color: inherit;  /* Links in paragraphs use the same color */
+}
+
+.inline-logo {
+    width: 16px; /* Adjust the width of the logo */
+    height: auto;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.inline-logo.nix {
+    position: relative;
+    top: -2px; /* negative moves it up */
+}
