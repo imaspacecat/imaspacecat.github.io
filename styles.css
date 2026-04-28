@@ -55,6 +55,11 @@ p a {
     /* top: px; */
 }
 
+svg {
+  vertical-align: middle;
+}
+
+
 .inline-logo.nix {
     position: relative;
     top: -2px;
@@ -72,4 +77,38 @@ p a {
   font-family: "Slabo 27px", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.gveret-levin-regular {
+  font-family: "Gveret Levin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name-line h1 {
+  display: inline;
+}
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 25px;
+}
+
+.jacquarda-bastarda-9-regular {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+
+}
+
+
+.jetbrains-mono-bruh {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
 }
