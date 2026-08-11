@@ -12,10 +12,56 @@ body {
     padding: 20px;
 }
 
+.title-bar {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    font-size: 1.15em;
+}
+
+.title-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title-bar a:hover {
+    text-decoration: underline;
+}
+
 .content {
     max-width: 800px;
     margin: 0 auto;
     padding: 15px;
+}
+
+.content.home {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.home-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.home-photo {
+    width: 220px;
+    flex-shrink: 0;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .content.home {
+        flex-direction: column;
+    }
+
+    .home-photo {
+        width: 180px;
+    }
 }
 
 h3 {
@@ -79,14 +125,24 @@ svg {
   font-style: normal;
 }
 
-.gveret-levin-regular {
-  font-family: "Gveret Levin", cursive;
-  font-weight: 400;
-  font-style: normal;
+.name-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .name-line h1 {
   display: inline;
+  margin: 0;
+}
+
+.name-line .linkedin {
+  color: inherit;
+  line-height: 0;
+}
+
+.name-line .linkedin:hover {
+  opacity: 0.7;
 }
 
 .jacquard-12-regular {
@@ -111,4 +167,57 @@ svg {
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+}
+
+.post h1 {
+  margin-bottom: 0.25em;
+}
+
+.post h2, .post h3 {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.post-date {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 1em;
+}
+
+.post pre {
+  background: #f4f4f4;
+  padding: 0.75em 1em;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  font-size: 0.95em;
+}
+
+.post code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+.post pre code {
+  font-size: inherit;
+}
+
+.post blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list a {
+  color: inherit;
+}
+
+.post-list .post-date {
+  margin-bottom: 0;
+  margin-left: 0.5em;
 }
