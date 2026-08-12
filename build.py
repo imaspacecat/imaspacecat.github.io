@@ -71,7 +71,7 @@ def parse(text: str) -> tuple[dict[str, str], str]:
 
 
 def main() -> None:
-    md = markdown.Markdown(extensions=["fenced_code", "tables"])
+    md = markdown.Markdown(extensions=["fenced_code", "tables", "footnotes"])
     posts = []
     for path in sorted(POSTS.glob("*.md")):
         meta, body = parse(path.read_text())

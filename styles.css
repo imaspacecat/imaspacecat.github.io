@@ -169,8 +169,13 @@ svg {
   font-size: 15px;
 }
 
+.post {
+  line-height: 1.2;
+}
+
 .post h1 {
   margin-bottom: 0.25em;
+  font-size: 2rem;
 }
 
 .post h2, .post h3 {
@@ -182,6 +187,53 @@ svg {
   color: #666;
   font-size: 0.95em;
   margin-bottom: 1em;
+}
+
+.post a {
+  color: inherit;
+}
+
+.post .footnote-ref {
+  text-decoration: none;
+  margin-left: 0.1em;
+}
+
+.post .footnote-ref::before {
+  content: "[";
+}
+
+.post .footnote-ref::after {
+  content: "]";
+}
+
+.post .footnote-ref:hover {
+  text-decoration: underline;
+}
+
+.post .footnote {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+.post .footnote hr {
+  display: none;
+}
+
+.post .footnote ol {
+  padding-left: 1.5em;
+}
+
+.post .footnote li {
+  margin-bottom: 0.4em;
+}
+
+.post .footnote p {
+  margin-bottom: 0;
+  font-size: inherit;
+}
+
+.post .footnote-backref {
+  text-decoration: none;
 }
 
 .post pre {
@@ -205,7 +257,15 @@ svg {
   border-left: 3px solid #ccc;
   padding-left: 1em;
   color: #555;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
+}
+
+.post blockquote p {
+  margin-bottom: 0.4em;
+}
+
+.post blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 .post-list {
