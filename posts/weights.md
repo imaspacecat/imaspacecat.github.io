@@ -1,11 +1,12 @@
 ---
 title: Open weight is not open source
 date: 2026-08-11
+draft: true
 ---
 
 > Open Weight: access to model parameters.
 >
-> Open Source: access to the foundational training data, code, and infrastructure.
+> Open Source: access to the foundational training data and code.
 
 **Open weight is not open source.**
 
@@ -14,13 +15,12 @@ In the past month I've noticed a concerning misuse of the term "open source" to 
 - open-weight models labelled open-source[^1][^2].
 - softened variants like “open source the weights”[^3][^4].
 - benchmarks listing open-weight models as open source[^5].
-- The press have begun to adopt the same lingo[^6][^7].
+- the press have begun to adopt the same lingo[^6][^7].
 
 This conflation is dangerous, for various reasons:
 
 - false trust - readers assume a level of transparency that does not exist such as expectations of reproducibility and auditability.
 - obscures the real source of power - data, training, and infrastructure, while maintaining a veil of openness.
-- erodes the true meaning of OSS.
 - makes it harder to recognize and reward projects that are actually open.
 - causes confusion in less expert audiences including policy makers who reasonably assume that open source means something else.
 

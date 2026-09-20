@@ -75,13 +75,15 @@ def main() -> None:
     posts = []
     for path in sorted(POSTS.glob("*.md")):
         meta, body = parse(path.read_text())
+        output = POSTS / f"{path.stem}.html"
+        if meta.get("draft", "").lower() in {"true", "yes", "1"}:
+            output.unlink(missing_ok=True)
+            continue
         title = meta.get("title", path.stem)
         date = meta.get("date", "")
         html = md.convert(body)
         md.reset()
-        (POSTS / f"{path.stem}.html").write_text(
-            TEMPLATE.format(title=title, date=date, body=html)
-        )
+        output.write_text(TEMPLATE.format(title=title, date=date, body=html))
         posts.append((date, title, path.stem))
 
     posts.sort(reverse=True)
